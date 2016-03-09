@@ -3,9 +3,12 @@
 def power_base(base, exponent):
 	count = 1
 	number = base 
+	if exponent == 0:
+			number = 1
 	while count < exponent:
 		number *= base
 		count += 1
+
 	return number
 	
 	
